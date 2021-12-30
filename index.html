@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./dist/img/icons8-u-64.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <title>AdaptiveU</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo"
+          ><img src="./dist/img/adaptiveU.png" alt="adaptiveU logo" height="28"
+        /></a>
+        <div class="explore">
+          <div class="explore__profile">
+            <div class="select">
+              <div type="button" class="select__btn" data-type="Sathya">
+                Sathya
+              </div>
+              <ul class="select__dropdown">
+                <li class="option" data-type="Sathya">Sathya</li>
+                <li class="option" data-type="Work">Work</li>
+                <li class="option" data-type="Logout">Logout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <nav class="navigation">
+        <div class="container">
+          <div class="nav__dropdown">
+            <button class="nav__dropdown-btn" data-target="FULL">full</button>
+            <ul class="nav__dropdown-list">
+              <li class="option" data-target="full">full</li>
+              <li class="option" data-target="AdaptiveU">AdaptiveU</li>
+              <li class="option" data-target="AnywhereWorks">anywhereworks</li>
+            </ul>
+          </div>
+          <ul class="nav__list">
+            <li><a class="nav__list-link" href="javascript:void(0)">me</a></li>
+            <li>
+              <a class="nav__list-link" href="javascript:void(0)">Challanges</a>
+            </li>
+            <li>
+              <a class="nav__list-link" href="javascript:void(0)">peers</a>
+            </li>
+            <li>
+              <a class="nav__list-link" href="javascript:void(0)">store</a>
+            </li>
+            <li>
+              <a class="nav__list-link" href="javascript:void(0)">admin</a>
+            </li>
+          </ul>
+          <div class="coins">
+            <img src="./dist/img/coin.svg" alt="coin" width="16" height="16" />
+            <span class="coins__earned">3157</span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="section-content">
+        <aside class="sidebar">
+          <div class="search">
+            <div class="search__bar">
+              <img
+                src="./dist/img/search-solid.svg"
+                alt="search-icon"
+                class="search__bar-img"
+                height="18"
+                width="18"
+              />
+              <input
+                type="text "
+                placeholder="Search"
+                class="search__bar-input"
+              />
+            </div>
+          </div>
+          <div class="sidebar__tabs">
+            <ul class="sidebar__tabs-list">
+              <li class="active"><a href="javascript:void(0)">All</a></li>
+              <li><a href="javascript:void(0)">Authors</a></li>
+              <li><a href="javascript:void(0)">Aviation</a></li>
+              <li><a href="javascript:void(0)">Biography</a></li>
+              <li><a href="javascript:void(0)">Books</a></li>
+              <li><a href="javascript:void(0)">Business</a></li>
+              <li><a href="javascript:void(0)">Code</a></li>
+              <li><a href="javascript:void(0)">Communication</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- ----- -->
+        <article class="content-wrapper">
+          <div class="content">
+            <div class="content__head clearfix">
+              <div class="content__head-img float-left">
+                <img
+                  src="./dist/img/paper-making-graphic.jpg"
+                  alt="paper making process"
+                />
+              </div>
+              <div class="content__head-desc float-left">
+                <h1>The paper Making Process</h1>
+                <p>Added by <span>subhashree</span></p>
+                <small>on 28 Feb 2017 08:53 AM</small>
+              </div>
+            </div>
+            <div class="content__body">
+              <section class="section-chart">
+                <div class="section__tabs">
+                  <ul class="section__tabs-list">
+                    <li><a href="javascript:void(0)">Excercises</a></li>
+                    <li><a href="javascript:void(0)">Review</a></li>
+                    <li class="active">
+                      <a href="javascript:void(0)">Reports</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="title-wrapper">
+                  <ul class="box">
+                    <li>Worked On</li>
+                    <li>Requested</li>
+                    <li>Completed</li>
+                  </ul>
+                  <h2>Challange Report</h2>
+
+                  <div class="dropdown dropdown-md" id="pages">
+                    <button
+                      class="dropdown__btn"
+                      id="dropdown__btn"
+                      data-target="13 Mar - 19 Mar"
+                    >
+                      13 Mar - 19 Mar
+                    </button>
+                    <ul class="dropdown__body" id="dropdown__body">
+                      <li class="options" data-target="20 Mar - 26 Mar">
+                        20 Mar - 26 Mar
+                      </li>
+                      <li class="options" data-target="27 Mar - 3 Apr">
+                        27 Mar - 3 Apr
+                      </li>
+                      <li class="options" data-target="4 Apr - 10 Apr">
+                        4 Apr - 10 Apr
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="chart">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </section>
+              <section class="section-stats">
+                <div class="grid-row clearfix">
+                  <article class="float-left">
+                    <span>105 Peers</span>
+                    <p>Total peers who took this challenge</p>
+                  </article>
+                  <article class="float-left">
+                    <span>735 Minutes</span>
+                    <p>Total minutes spend by peers</p>
+                  </article>
+                  <article class="float-left">
+                    <span>840 Points</span>
+                    <p>Total points earned by peers</p>
+                  </article>
+                </div>
+              </section>
+              <section class="section-records">
+                <div class="title__bar">
+                  <h2>Table view</h2>
+                  <div class="title__bar-search">
+                    <img
+                      src="./dist/img/search.svg"
+                      alt="search icon"
+                      height="14"
+                      width="14"
+                    />
+                    <input type="text" placeholder="Search" />
+                  </div>
+                  <div class="title__bar-select">
+                    <button>
+                      <img
+                        src="./dist/img/cloud.svg"
+                        alt="cloud"
+                        height="18"
+                        width="18"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <ul class="records__row clearfix">
+                  <li class="records__col float-left">Name</li>
+                  <li class="records__col float-left">
+                    Date Started
+                    <!-- <figure> -->
+                    <img
+                      src="./dist/img/exchange.svg"
+                      alt="exchange icon"
+                      height="14"
+                      width="14"
+                    />
+                    <!-- </figure> -->
+                  </li>
+                  <li class="records__col float-left">
+                    Date Requested
+                    <!-- <figure> -->
+                    <img
+                      src="./dist/img/exchange.svg"
+                      alt="exchange icon"
+                      height="14"
+                      width="14"
+                    />
+                    <!-- </figure> -->
+                  </li>
+                  <li class="records__col float-left">
+                    Date Approved
+
+                    <img
+                      src="./dist/img/exchange.svg"
+                      alt="exchange icon"
+                      height="14"
+                      width="14"
+                    />
+                  </li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-1.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-1.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-2.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-3.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-2.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-3.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-1.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-2.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-3.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+                <ul class="row">
+                  <li class="col name">
+                    <img
+                      src="./dist/img/person-1.svg"
+                      alt="person"
+                      height="30"
+                      width="30"
+                    />
+                    <a href="javascript:void(0)">Vishnu prasath</a>
+                  </li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>10 Jun 2017 11:10 pm</li>
+                  <li>-</li>
+                  <li><button type="submit" class="btn">view</button></li>
+                </ul>
+              </section>
+              <footer>
+                <div class="pagination">
+                  <div class="row-num">
+                    <label for="pages">Rows per page</label>
+                    <div class="dropdown" id="pages">
+                      <button
+                        class="dropdown__btn"
+                        id="dropdown__btn"
+                        data-target="10"
+                      >
+                        10
+                      </button>
+                      <ul class="dropdown__body" id="dropdown__body">
+                        <li class="options" data-target="10">10</li>
+                        <li class="options" data-target="15">15</li>
+                        <li class="options" data-target="20">20</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="page-num">
+                    <p>Showing 1 - 10 of 50</p>
+                    <img
+                      src="./dist/img/chevron-left-solid.svg"
+                      alt="arrow-left"
+                      width="14"
+                      height="14"
+                    />
+                    <img
+                      src="./dist/img/chevron-right-solid.svg"
+                      alt="arrow-right"
+                      width="14"
+                      height="14"
+                    />
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+      integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>
